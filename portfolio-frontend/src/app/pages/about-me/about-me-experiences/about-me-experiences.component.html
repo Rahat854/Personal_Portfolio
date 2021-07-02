@@ -1,1 +1,7 @@
-<p>about-me-experiences works!</p>
+<div class="px-8 py-16">
+  <app-header title="Work Experience" description="I have 15 years of experience, working as a web designer, web developer and UX specialist." classes="text-black"></app-header>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+    <app-experience-card *ngFor="let experience of experiences; index as i" [serial]="i + 1" [image]="experience.image" [title]="experience.title" [description]="experience.description"></app-experience-card>
+  </div>
+</div>

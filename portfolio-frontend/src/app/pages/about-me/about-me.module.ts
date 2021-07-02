@@ -11,6 +11,10 @@ import { AboutMeCounterComponent } from './about-me-counter/about-me-counter.com
 import { AboutMeProjectsComponent } from './about-me-projects/about-me-projects.component';
 import { AboutMeReferencesComponent } from './about-me-references/about-me-references.component';
 import { ServiceCardComponent } from './about-me-services/service-card/service-card.component';
+import { AboutMeSkillProgressBarComponent } from './about-me-skills/about-me-skill-progress-bar/about-me-skill-progress-bar.component';
+import { SharedModule } from '../../shared/shared.module';
+import { ExperienceCardComponent } from './about-me-experiences/experience-card/experience-card.component';
+import { ExperienceCardHeaderComponent } from './about-me-experiences/experience-card/experience-card-header/experience-card-header.component';
 
 
 @NgModule({
@@ -23,11 +27,15 @@ import { ServiceCardComponent } from './about-me-services/service-card/service-c
     AboutMeCounterComponent,
     AboutMeProjectsComponent,
     AboutMeReferencesComponent,
-    ServiceCardComponent
+    ServiceCardComponent,
+    AboutMeSkillProgressBarComponent,
+    ExperienceCardComponent,
+    ExperienceCardHeaderComponent
   ],
   imports: [
     CommonModule,
-    AboutMeRoutingModule
+    AboutMeRoutingModule,
+    SharedModule
   ]
 })
 export class AboutMeModule { }
